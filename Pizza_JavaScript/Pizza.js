@@ -20,8 +20,8 @@ function getReceipt() {
         sizeTotal = 14;
     } else if (selectedSize === "Extra Large Pizza") {
         sizeTotal = 16;
-    } else if (selectedSize === "Bite size Pizza") {
-        sizeTotal = 5;
+    } else if (selectedSize === "4 Bite Size Pizza") {
+        sizeTotal = 18;
     }
     runningTotal = sizeTotal;
     console.log(selectedSize+" = £"+sizeTotal+".00");
@@ -54,7 +54,7 @@ function getTopping(runningTotal,text1) {
     console.log("topping text1: "+text1);
     console.log("Purchase Total: "+"£"+runningTotal+".00");
     document.getElementById("showText").innerHTML=text1;
-    document.getElementById("totalPrice").innerHTML = "</h3>Total: <strong>£"+runningTotal+".00"+"</strong></h3>";
+    document.getElementById("totalPrice").innerHTML = "<h3>Total: <strong>£"+runningTotal+".00"+"</strong></h3>";
 };
 
 
